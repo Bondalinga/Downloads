@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Downloads</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Downloads</h1> <!-- This is the title -->
+    <div class="container" id="file-container">
+        <!-- Files will be listed here -->
+    </div>
+    <script>
+        // Get the container where files will be listed
+        var container = document.getElementById('file-container');
+
+        // Fetch the list of files from the server
+fetch('/file-list')
+    .then(response => response.json())
+    .then(files => {
+        files.forEach(file => {
+            var p = document.createElement('p');
+            p.className = 'file-item';
+            var span = document.createElement('span');
+            span.textContent = file;
+            p.appendChild(span);
+            var a = document.createElement('a');
+            a.href = `/downloads/${file}`;
+            a.textContent = 'Download';
+            p.appendChild(a);
+            container.appendChild(p);
+        });
+    });
+
+
+    </script>
+</body>
+</html>

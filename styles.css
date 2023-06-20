@@ -1,0 +1,39 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgray;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background-color: #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    border-bottom: 1px solid #888888;
+}
+
+.container .file-item span {
+    text-align: left;
+}
+
+.container .file-item a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(67, 67, 165);
+    padding: 5px 10px; /* Increased horizontal padding */
+    margin-bottom: 10px; /* This creates a gap between the button and the border */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Lucida Handwriting', 'Courier New', Courier, monospace;
+    color: rgb(39, 106, 168);
+}
