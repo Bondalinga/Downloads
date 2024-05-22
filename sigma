@@ -1,6 +1,6 @@
-local keyStorage = {
-	["IrYGmfrwrddJnESZJhsy"] = 5864441446,
-	["xSrdKUhoCjB1n48zbAND"] = 1233149402,
-	["XwOrIP8Az6qyRFDdmchi"] = 6050890449,
-	["cWUxumecMULKe0qRyXiP"] = 3840874474,
+return {
+    ["IrYGmfrwrddJnESZJhsy"] = 5864441446,
+    ["xSrdKUhoCjB1n48zbAND"] = 1233149402,
+    ["XwOrIP8Az6qyRFDdmchi"] = 6050890449,
+    ["cWUxumecMULKe0qRyXiP"] = 3840874474,
 }
